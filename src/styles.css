@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.wrapper {
+    width: 1500px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+}
+
+.message-error {
+    color: red;
+}
+
+.message-success {
+    color: green;
+}
+
+.table-row {
+    display: flex;
+    justify-content: space-around;
+    min-width: 100%;
+    gap: 16px;
+    align-items: center;
+}
+
+.table {
+    min-height: 50px;
+    max-height: 50px;
+}
+
+.table:nth-child(2n) {
+    background-color: rgba(231, 78, 138, 0.2);
+}
+
+.table-row span {
+    font-weight: 700;
+}
+
+.table-row > div, .table-row > p, .table-row > span {
+    width: calc(100% / 9 - 16px);
+}
+
+.table-row-buttons {
+    justify-content: center;
+    gap: 8px;
+}

@@ -3,13 +3,11 @@ import { persistStore, persistReducer } from 'redux-persist'
 import storage from 'redux-persist/lib/storage'
 import {thunk} from "redux-thunk";
 import userReducer from "./user/reducer";
-import contentReducer from "./content/reducer";
-import langReducer from "./lang/reducer";
+import tableReducer from "./table/reducer";
 
 const rootReducer = combineReducers({
-    content: contentReducer,
     user: userReducer,
-    lang: langReducer
+    table: tableReducer
 })
 
 const persistConfig = {
